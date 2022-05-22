@@ -12,6 +12,7 @@
 		18086082283849C100CEC2C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18086081283849C100CEC2C6 /* Assets.xcassets */; };
 		18086085283849C100CEC2C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18086084283849C100CEC2C6 /* Preview Assets.xcassets */; };
 		1837930728389BD4004374E3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837930628389BD4004374E3 /* CircleImage.swift */; };
+		183793092839B78D004374E3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183793082839B78D004374E3 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		18086081283849C100CEC2C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18086084283849C100CEC2C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1837930628389BD4004374E3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		183793082839B78D004374E3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1808607F283849C100CEC2C6 /* ContentView.swift */,
 				18086081283849C100CEC2C6 /* Assets.xcassets */,
 				1837930628389BD4004374E3 /* CircleImage.swift */,
+				183793082839B78D004374E3 /* MapView.swift */,
 				18086083283849C100CEC2C6 /* Preview Content */,
 			);
 			path = "swift-demo";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18086080283849C100CEC2C6 /* ContentView.swift in Sources */,
+				183793092839B78D004374E3 /* MapView.swift in Sources */,
 				1808607E283849C100CEC2C6 /* swift_demo_App.swift in Sources */,
 				1837930728389BD4004374E3 /* CircleImage.swift in Sources */,
 			);
