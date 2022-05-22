@@ -1,15 +1,8 @@
-//
-//  CircleImage.swift
-//  swift-demo
-//
-//  Created by Logan Nguyễn on 5/20/22.
-//
-
 import SwiftUI
 
 struct CircleImage: View {
     var body: some View {
-        Image("turtle-rock")
+        Image("turtlerock")
             .clipShape(Circle())
             .overlay{
                 Circle().stroke(.white, lineWidth: 4)

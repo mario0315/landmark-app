@@ -32,7 +32,7 @@ struct ContentView: View {
                     .font(.title2);
                 Text("Desctive text");
                 
-            }.padding()
+            }.padding();
             
             
             Spacer();
