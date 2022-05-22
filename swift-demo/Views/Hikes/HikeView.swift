@@ -26,7 +26,12 @@ struct HikeView: View {
                 Spacer()
 
                 Button {
-                    showDetail.toggle()
+                    /**
+                        withAnimation function animates all the views affected by showDetail
+                     */
+                    withAnimation {
+                        showDetail.toggle()
+                    }
                 } label: {
                     Label("Graph", systemImage: "chevron.right.circle")
                         .labelStyle(.iconOnly)
@@ -34,7 +39,6 @@ struct HikeView: View {
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
                         .padding()
                         .scaleEffect(showDetail ? 1.3 : 1)
-                        .animation(.spring(), value: showDetail)
                 }
             }
 
