@@ -2,6 +2,8 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    var coordinate: CLLocationCoordinate2D;
+    
     /**
         @State attribute is used to establish a source of truth for data in the app
         Allow the varuable to be updated in more than one view
@@ -11,13 +13,27 @@ struct MapView: View {
         span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
     )
     
+    
     var body: some View {
         Map(coordinateRegion: $region) // Passing a binding/reference using $
+            .onAppear { // onAppear triggers a calculation of region based on the current coordinate
+                setRegion(coordinate)
+            }
     }
+    
+    
+    // Setter
+    private func setRegion(_ coordinate: CLLocationCoordinate2D) {
+        region = MKCoordinateRegion(
+            center: coordinate,
+            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+        )
+    }
+    
 }
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(coordinate: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868))
     }
 }
