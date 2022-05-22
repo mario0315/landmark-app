@@ -9,8 +9,16 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        List(landmarks){ // the key ID is identified using the identifiable protocal added in Landmark data object model
-            landmark in LandmarkRow(landmark: landmark);
+        NavigationView{
+            List(landmarks){ // the key ID is identified using the identifiable protocal added in Landmark data object model
+                landmark in
+                    NavigationLink {
+                        LandmarkDetail()
+                    } label: {
+                        LandmarkRow(landmark: landmark);
+                    }
+            }
+            .navigationTitle("Landmarks")
         }
     }
 }
