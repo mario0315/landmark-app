@@ -1,25 +1,29 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    @State private var showFavoritesOnly = true;
+    @State private var showFavoritesOnly = false;
     
     var filteredLandmarks: [Landmark] {
         landmarks.filter {
             landmark in
-            (showFavoritesOnly || landmark.isFavorite)
+            (!showFavoritesOnly || landmark.isFavorite)
         }
     }
     
     var body: some View {
         NavigationView{
-            // Reading data from landmarks inited in ModelData retrieved data from json
-            List(filteredLandmarks){ // the key ID is identified using the identifiable protocal added in Landmark data object model
-                landmark in
-                    NavigationLink {
-                        LandmarkDetail(landmark: landmark)
-                    } label: {
-                        LandmarkRow(landmark: landmark);
-                    }
+            List{ // Reading data from landmarks inited in ModelData retrieving data from json
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites only")
+                }
+                ForEach(filteredLandmarks) {
+                    landmark in
+                        NavigationLink {
+                            LandmarkDetail(landmark: landmark)
+                        } label: {
+                            LandmarkRow(landmark: landmark);
+                        }
+                }
             }
             .navigationTitle("Landmarks")
         }
