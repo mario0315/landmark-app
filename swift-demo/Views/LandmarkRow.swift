@@ -7,7 +7,6 @@ struct LandmarkRow: View {
     
     var body: some View {
         HStack{
-            
             landmark
                 .image
                 .resizable()
@@ -16,6 +15,11 @@ struct LandmarkRow: View {
             Text(landmark.name);
             
             Spacer();
+            
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
     
