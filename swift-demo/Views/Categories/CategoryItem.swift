@@ -5,13 +5,14 @@ struct CategoryItem: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            landmark
-                .image
+            landmark.image
+                .renderingMode(.original)
                 .resizable()
                 .frame(width: 155, height: 155)
                 .cornerRadius(5);
             
             Text(landmark.name)
+                .foregroundColor(.primary)
                 .font(.caption);
         }
         .padding(.leading, 15)
