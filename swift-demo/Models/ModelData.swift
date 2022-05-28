@@ -17,6 +17,13 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json");
     
     var hikes: [Hike] = load("hikeData.json"); // no need @Published since hike data won't be mutated
+    
+    var categories: [String: [Landmark]] {
+        Dictionary (
+            grouping: landmarks,
+            by: {$0.category.rawValue}
+        )
+    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
