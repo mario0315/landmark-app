@@ -18,8 +18,17 @@ final class ModelData: ObservableObject {
     
     var hikes: [Hike] = load("hikeData.json"); // no need @Published since hike data won't be mutated
     
+    var features: [Landmark] {
+        landmarks.filter {
+            $0.isFeatured;
+        }
+    }
+    
     var categories: [String: [Landmark]] {
         Dictionary (
+            /**
+             Group all the landmarks in the json file based on category's value,
+             */
             grouping: landmarks,
             by: {$0.category.rawValue}
         )
