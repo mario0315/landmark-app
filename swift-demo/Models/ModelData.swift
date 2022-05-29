@@ -15,6 +15,7 @@ final class ModelData: ObservableObject {
      so that its subscribers can pick up the change.
      */
     @Published var landmarks: [Landmark] = load("landmarkData.json");
+    @Published var profile = Profile.default;
     
     var hikes: [Hike] = load("hikeData.json"); // no need @Published since hike data won't be mutated
     
