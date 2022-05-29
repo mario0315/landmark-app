@@ -6,7 +6,7 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                modelData.features[0]
+                modelData.features[2]
                     .image
                     .resizable()
                     .scaledToFill()
