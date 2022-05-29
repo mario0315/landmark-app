@@ -42,6 +42,7 @@
 		18B09C512843F396000E4EDF /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B09C502843F396000E4EDF /* PageViewController.swift */; };
 		18B09C532843F715000E4EDF /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B09C522843F715000E4EDF /* FeatureCard.swift */; };
 		18B09C5528440754000E4EDF /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B09C5428440754000E4EDF /* PageView.swift */; };
+		18B09C5728441610000E4EDF /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B09C5628441610000E4EDF /* PageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		18B09C502843F396000E4EDF /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		18B09C522843F715000E4EDF /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		18B09C5428440754000E4EDF /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		18B09C5628441610000E4EDF /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 				18B09C502843F396000E4EDF /* PageViewController.swift */,
 				18B09C522843F715000E4EDF /* FeatureCard.swift */,
 				18B09C5428440754000E4EDF /* PageView.swift */,
+				18B09C5628441610000E4EDF /* PageControl.swift */,
 			);
 			path = PageView;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				1837932F283AC7B0004374E3 /* Badge.swift in Sources */,
 				183793092839B78D004374E3 /* MapView.swift in Sources */,
 				1895F5B52841CA3B009D71AA /* CategoryItem.swift in Sources */,
+				18B09C5728441610000E4EDF /* PageControl.swift in Sources */,
 				1837933A283AECB2004374E3 /* GraphCapsule.swift in Sources */,
 				1808607E283849C100CEC2C6 /* swift_demo_App.swift in Sources */,
 				18379323283AA556004374E3 /* FavoriteButton.swift in Sources */,

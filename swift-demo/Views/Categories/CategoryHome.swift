@@ -7,12 +7,8 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                modelData.features[2]
-                    .image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
+                                    .aspectRatio(3 / 2, contentMode: .fit)
                     .listRowInsets(EdgeInsets()); // set the edge inset to 0 so the component can fill the whole parent container
                 
                 ForEach(modelData.categories.keys.sorted(), id: \.self) {
