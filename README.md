@@ -1,4 +1,4 @@
-# iOS demo app (Landmarks)
+# iOS app (Landmarks)
 
 ## Demo
 
