@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CategoryRow: View {
-    var categoryName: String;
-    var items: [Landmark];
+    var categoryName: String; // props
+    var items: [Landmark]; // props
     
     var body: some View {
         VStack(alignment: .leading) {

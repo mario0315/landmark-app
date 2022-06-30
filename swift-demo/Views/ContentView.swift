@@ -5,7 +5,7 @@ struct ContentView: View {
         case featured;
         case list;
     }
-    
+
     @State private var selection: Tab = .featured;
     
     var body: some View {
@@ -15,7 +15,7 @@ struct ContentView: View {
                     Label("Featured", systemImage: "star");
                 }
                 .tag(Tab.featured)
-            
+
             LandmarkList()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
